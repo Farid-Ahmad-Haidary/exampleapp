@@ -1,0 +1,13 @@
+
+Using for loop for  receving the data from route
+
+  @for ($i = 0; $i < count($students); $i++)
+    <p style="text-align: center">{{$i}}.{{$students[$i]['name']}}</p>
+  @endfor  
+  
+
+Using foreach loop for  receving the data from route 
+
+  @foreach ($students as $student)
+    <p style="text-align: center">{{$student['name']}}</p>
+  @endforeach  

@@ -1,0 +1,1 @@
+alert("functions.js loaded");
