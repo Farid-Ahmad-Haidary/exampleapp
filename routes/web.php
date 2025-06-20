@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\CategoryController;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\TestController;
@@ -33,3 +34,5 @@ Route::get('/home' , [TestController::class, 'index']);
 Route::get('/about', [TestController::class, 'about']);
 Route::get('/contact' , [TestController::class, 'contact']);
 Route::get('/project' , [TestController::class, 'project']);
+
+Route::get('/allcategories', [CategoryController::class, 'index']);
