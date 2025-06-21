@@ -1,10 +1,11 @@
 <?php
 
 use App\Http\Controllers\CategoryController;
+use App\Http\Controllers\TeacherController;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\TestController;
-use App\Http\Controllers\testController as ControllersTestController;
+
 
 /*
 |--------------------------------------------------------------------------
@@ -36,3 +37,5 @@ Route::get('/contact' , [TestController::class, 'contact']);
 Route::get('/project' , [TestController::class, 'project']);
 
 Route::get('/allcategories', [CategoryController::class, 'index']);
+Route::get('/allTeachers', [TeacherController::class, 'TeacherIndex']);
+Route::get('/createTeacher', [TeacherController::class, 'create'])->name('newTeacher');
