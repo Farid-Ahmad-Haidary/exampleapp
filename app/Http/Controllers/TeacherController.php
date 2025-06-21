@@ -18,4 +18,16 @@ class TeacherController extends Controller
     {
         return view('teachers.create');
     }
+    
+
+    public function store(Request $request){
+        Teacher::insert([
+            'name' => $request->name,
+            'last_name' => $request->last_name,
+            'email' => $request->email,
+            'Salary' => $request->salary,
+            
+        ]);
+    }
+
 }

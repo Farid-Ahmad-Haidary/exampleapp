@@ -39,3 +39,4 @@ Route::get('/project' , [TestController::class, 'project']);
 Route::get('/allcategories', [CategoryController::class, 'index']);
 Route::get('/allTeachers', [TeacherController::class, 'TeacherIndex']);
 Route::get('/createTeacher', [TeacherController::class, 'create'])->name('newTeacher');
+Route::post('/storeTeacher', [TeacherController::class, 'store'])->name('storeTeacher');

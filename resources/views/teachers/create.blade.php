@@ -8,9 +8,11 @@
   <title>Create</title>
 </head>
 <body>
- <form action="">
+  
+ <form action="{{route('storeTeacher')}}" method="POST">
+  @csrf
   <div>
-    <label for="name">Name:</label>
+    <label for="name">name:</label>
     <input type="text" id="name" name="name" required>
   </div>
   
